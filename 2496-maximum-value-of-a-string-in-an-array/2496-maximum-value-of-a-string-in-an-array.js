@@ -8,7 +8,7 @@ var maximumValue = function(strs) {
     for (const str of strs) {
         if (isNaN(str)) max = Math.max(max, str.length)
         else {
-            max = Math.max(max, +str)
+            max = Math.max(max, str)
         }
         
     }
