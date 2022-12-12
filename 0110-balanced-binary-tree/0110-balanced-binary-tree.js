@@ -11,25 +11,13 @@
  * @return {boolean}
  */
 var isBalanced = function(root) {
-//     if (!root) return true
-    
-//     const getHeight = root => {
-//         if (!root) return 0
-//         let l = getHeight(root.left)
-//         let r = getHeight(root.right)
-        
-//         if (l === -1 || r === -1) return -1
-//         if (Math.abs(l - r) > 1) return -1
-//         return Math.max(l, r) + 1
-//     }
-    
-//     if (getHeight(root) === -1) return false
-//     return true
+    if (!root) return true
     
     const dfs = node => {
         if (!node) return 0
         let l = 1 + dfs(node.left)
         let r = 1 + dfs(node.right)
+        
         if (Math.abs(l - r) > 1) return Infinity
         return Math.max(l, r)
     }
