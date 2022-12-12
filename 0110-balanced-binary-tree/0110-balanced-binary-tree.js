@@ -22,5 +22,5 @@ var isBalanced = function(root) {
         return Math.max(l, r)
     }
     
-    return dfs(root) !== Infinity ? true : false
+    return dfs(root) !== Infinity
 };
