@@ -10,5 +10,4 @@ class Solution:
         else:
             temp = head.next
             head.next = prev
-            
-        return self.reverseList(temp, prev=head)
+            return self.reverseList(temp, prev=head)
