@@ -4,7 +4,7 @@ class Solution:
         result = 0
         
         for i in range(len(s)):
-            if i - start + 1 == 3:
+            if i - start == 2:
                 visited = {}
                 
                 for j in range(start, i + 1):
