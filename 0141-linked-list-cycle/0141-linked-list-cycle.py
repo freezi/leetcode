@@ -11,13 +11,11 @@ class Solution:
         
         slow, fast = head, head.next
         
-        while (fast.next):
-            if not fast.next.next: 
-                return False
-            elif fast.next.next == slow.next:
+        while (fast.next and fast.next.next):
+            if fast.next.next == slow.next:
                 return True
             else:
                 slow = slow.next
                 fast = fast.next.next
             
-            
+        return False
