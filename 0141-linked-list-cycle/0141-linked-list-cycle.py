@@ -12,7 +12,7 @@ class Solution:
         slow, fast = head, head.next
         
         while fast.next and fast.next.next:
-            if fast.next.next == slow:
+            if fast.next.next == slow.next:
                 return True
             else:
                 slow = slow.next
