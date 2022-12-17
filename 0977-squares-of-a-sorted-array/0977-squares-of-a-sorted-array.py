@@ -21,9 +21,3 @@ class Solution:
             i -= 1
         
         return ans
-    
-"""
--4, 10 -> 16, 10
--1, 3 -> 1, 3
-
-"""
