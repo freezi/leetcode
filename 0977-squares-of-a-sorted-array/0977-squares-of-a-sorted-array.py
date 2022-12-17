@@ -7,9 +7,7 @@ class Solution:
 #             ans.append(num ** 2)
             
 #         return sorted(ans)
-        ans = [None] * len(nums)
-    
-        l, r, i = 0, len(nums) - 1, len(nums) - 1
+        ans, l, r, i = [None] * len(nums), 0, len(nums) - 1, len(nums) - 1
         
         while l <= r:
             if abs(nums[l]) > abs(nums[r]):
