@@ -1,6 +1,6 @@
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        # I'm just gonna solve with by sorting first and I'll come back to optimize
+        # I'm just gonna solve by sorting first and I'll come back to optimize
 #         ans = []
         
 #         for num in nums:
