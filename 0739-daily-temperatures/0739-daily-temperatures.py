@@ -4,10 +4,10 @@ class Solution:
         stack = []
         
         for i in range(len(temps) - 1, -1, -1):
-            while len(stack) != 0 and stack[-1][0] <= temps[i]:
+            while len(stack) and stack[-1][0] <= temps[i]:
                 stack.pop()
             
-            if len(stack) == 0:
+            if not len(stack):
                 ans[i] = 0
             else:
                 ans[i] = stack[-1][1] - i
