@@ -2,12 +2,12 @@ class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
         ans = []
         
-        for i in range(len(nums1)):
-            j = nums2.index(nums1[i])
+        for num in nums1:
+            j = nums2.index(num)
             c = -1
             
             while j < len(nums2):
-                if nums2[j] > nums1[i]:
+                if nums2[j] > num:
                     c = nums2[j]
                     break
                 else:
