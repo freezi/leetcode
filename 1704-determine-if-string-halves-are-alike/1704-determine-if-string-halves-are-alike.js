@@ -3,11 +3,11 @@
  * @return {boolean}
  */
 var halvesAreAlike = function(s) {
+    const vowels = 'aeiou'
     let l = 0,
         r = s.length - 1,
         c = 0
     
-    const vowels = 'aeiou'
     
     while (l < r) {
         if (vowels.includes(s[l].toLowerCase())) c++
